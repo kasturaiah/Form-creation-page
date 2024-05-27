@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up Form</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <div id="signUpForm" class="form">
+            <h2>Sign Up</h2>
+            <form>
+                <div class="form-group">
+                    <label for="signUpUsername">Username</label>
+                    <input type="text" id="signUpUsername" required>
+                    <small>Error message</small>
+                </div>
+                <div class="form-group">
+                    <label for="signUpEmail">Email</label>
+                    <input type="email" id="signUpEmail" required>
+                    <small>Error message</small>
+                </div>
+                <div class="form-group">
+                    <label for="signUpPassword">Password</label>
+                    <input type="password" id="signUpPassword" required>
+                    <small>Error message</small>
+                </div>
+                <button type="button" onclick="signUp()">Sign Up</button>
+                <p>Already have an account? <a href="#" onclick="showLoginForm()">Sign In</a></p>
+            </form>
+        </div>
+        <div id="loginForm" class="form hidden">
+            <h2>Sign In</h2>
+            <form>
+                <div class="form-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" required>
+                    <small>Error message</small>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                    <small>Error message</small>
+                </div>
+                <button type="button" onclick="login()">Sign In</button>
+                <p>Don't have an account? <a href="#" onclick="showSignUpForm()">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
